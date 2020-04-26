@@ -1,3 +1,108 @@
+/* ESTILO DO CADASTRO */
+#telacad2 h4{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#voltar{
+    margin-right:100px;
+}
+#telacad2 input[type= text]{
+    text-align: center;
+    width: 480px;
+    height: 20px;
+    margin-bottom: 25px;
+    border: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+}
+#telacad2 select{
+    width: 480px;
+    height: 35px;
+    margin-bottom: 25px;
+    border: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+}
+#telacad2 input[type= button],#telacad2 button{
+    width: 170px;
+    height: 50px;
+    border-radius: 13px;
+    border: white;
+    border-style: solid;
+    background-color: RoyalBlue;
+    color: white;    
+}
+button:hover, input[type= button], select{
+    cursor: pointer;
+}
+#telacad2 a,#telacad2 a:hover,#telacad2 a:visited{
+    color: white;
+    text-decoration: none;
+}
+#telacad2 label{
+    width: 500px;
+    height: 20px;
+    font-size: larger;
+}
+#telacad2{
+    position: absolute;
+    left:35%;
+    visibility: hidden;
+    display: block;
+    border: black;
+    border-style: solid;
+    border-radius: 30px;
+    width: 500px;
+    height: 470px;
+}
+#telacad1{
+    position: absolute;
+    visibility: visible;
+    left:35%;
+    display: block;
+    border: black;
+    border-style: solid;
+    border-radius: 30px;
+    width: 500px;
+    height: 470px;
+}
+#telacad1 h4{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#telacad1 input[type= text]{
+    text-align: center;
+    width: 480px;
+    height: 20px;
+    margin-bottom: 25px;
+    border: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+}
+#telacad1 input[type= button]{
+    width: 170px;
+    height: 50px;
+    border-radius: 13px;
+    border: white;
+    border-style: solid;
+    background-color: RoyalBlue;
+    color: white;
+}
+#telacad1 label{
+    width: 500px;
+    height: 20px;
+    font-size: larger;
+}
+.cad{
+    text-align: center;
+    justify-content: center;
+    
+}
+/* ESTILO DO PRODUTO */
 .desc{
     margin-left: 35px;
 }
@@ -26,6 +131,7 @@
     border: black;
     border-style: solid;
 }
+/* ESTILO DO INDEX */
 .listaP{
     list-style: none;
 
@@ -56,6 +162,7 @@
     background-color: whitesmoke;
     position: relative;
 }
+/* ESTILO DO MENU */
 .dep{
     font-weight: bold;
     font-size: 21px;
