@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Nomalize.css"/>
+    <link rel="stylesheet" href="CSS/Estilo.css"/>
+    <script src="JS/Script.js"></script>
+    <title>Carrinho</title>
+</head>
+<body>
+<div class="wrap">
+    <header class="header linha2">
+        <div class="menu ">
+            <h1 class="logo coluna col1"><a href="Index.html"><img src="IMG/logo.jfif" title="" alt=""></a></h1>
+            <h2 class="nomeSite coluna col2">e-comerce</h2>
+            <input type="text" name="nome" class="coluna col4 barra"/>
+           <a class="coluna col1 usr"><img src="IMG/user.png"></a>
+            <p class="coluna col2 log">
+                Olá Visitante
+                <br/>
+                <a>Entrar<a> | <a href="Cadastro.html">Cadastrar</a>
+            </p>
+            <a class="coluna col1 car" href="Tabela.html"><img src="IMG/car.png"></a>
+        </div>
+        <div class="submenu linha2">
+            <h3 class="col12 detalhes">
+                <ul>
+                <li>
+                    <select name="departamentos" placeholder="Departamentos" class="dep">
+                    <option value="" selected>Departamentos</option>
+                    <option value="0"><a>departamento 1</a></option>
+                    <option value="0"><a>departamento 1</a></option>
+                    <option value="0"><a>departamento 1</a></option>
+                    <option value="0"><a>departamento 1</a></option>
+                    <option value="0"><a>departamento 1</a></option>
+                    </select>
+                </li>
+                <li><a>Destaque 1</a></li>
+                <li><a>Destaque 1</a></li>
+                <li><a>Destaque 1</a></li>
+                <li><a>Destaque 1</a></li>
+                <li><a>Destaque 1</a></li>
+                </ul>
+            </h3>
+        </div>
+    </header>
+    <section>
+        <div class="tabela linha">
+            <table id="tbl">
+                <thead>
+                    <tr id="cabe">
+                        <th id="NP">Nome do Produto</th>
+                        <th id="D">Descrição</th>
+                        <th id="QE">QTd.Estoque</th>
+                        <th id="V">Valor</th>
+                        <th id="DES">Desconto</th>
+                        <th id="A">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo">
+                    <tr>
+                        <td>Banana</td>
+                        <td>Fruna amarela</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td><button onclick='removeLinha(this)'><img src="IMG/delete.png" class="icD"></button>
+                            <button onclick='editar(this)'><img src='IMG/editar.png' class='icD'></button></td>
+                    </tr>
+                    <tr>
+                        <td>Queijo</td>
+                        <td>Derivado do leitr</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td><button onclick='removeLinha(this)'><img src="IMG/delete.png" class="icD"></button>
+                            <button onclick='editar(this)'><img src='IMG/editar.png' class='icD'></button></td>
+                    </tr>
+                    <tr>
+                        <td>Pizza</td>
+                        <td>Comida boa</td>
+                        <td>50</td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td><button onclick='removeLinha(this)'><img src="IMG/delete.png" class="icD"></button>
+                            <button onclick='editar(this)'><img src='IMG/editar.png' class='icD'></button></td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+        <div class="linha fprod">
+                <label for="nomep">Nome do produto</label>
+                <input type="text" name="nomep" id="nomep" placeholder="Digite o nome do prodruto" class="formTable cadp">
+                <label for="descp">Descrição</label>
+                <textarea name="descp" id="descp" class="formTable cadp"></textarea>
+                <label for="quantp" class="coluna col4">Quantidade</label>
+                <label for="preco" class="coluna col4">Valor</label>
+                <label for="desconto" class="coluna col3">Desconto</label>
+                <input type="text" name="quantp" id="quantp" class="formTableQ cadp">
+                <input type="text" name="preco" id="preco" class="formTableQ cadp">
+                <input type="text" name="desconto" id="desconto" class="formTableQ cadp">
+                <input type="submit" name="salvar" id="btnSalvar" value="Salvar" class="btn cadp" onclick="adcionarP()">
+                <button id="cancel" class="btn cadp" onclick="limparCampos()">Cancelar</button>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,3 +1,59 @@
+/* ESTILO DA TABELA */
+.icD{
+    max-width: 22px;
+}
+.zebrada{
+    background: silver;
+}
+th{
+    border-style: solid;
+}
+td{
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    border-color: black;
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+
+}
+.formTable{
+    width: 950px;
+}
+textarea.formTable{
+    height: 100px;
+}
+.formTableQ{
+    width: 313px;
+
+}
+.cadp{
+    border-radius: 7px;
+    border-color: lightgray;
+    margin-bottom: 20px;
+}
+#btnSalvar{
+    margin-left: 610px;
+}
+#NP{
+    width: 250px;
+}
+#D{
+    width: 300px;
+    max-width: 300px;
+}
+#V{
+    width: 80px;
+}
+#A{
+    width: 80px;
+}
+#DES{
+    width: 80px;
+}
+
 /* ESTILO DO CADASTRO */
 #telacad2 h4{
     font-size: 40px;
@@ -25,7 +81,7 @@
     border-style: solid;
     border-radius: 10px;
 }
-#telacad2 input[type= button],#telacad2 button{
+#telacad2 input[type= button],#telacad2 button, .btn{
     width: 170px;
     height: 50px;
     border-radius: 13px;
@@ -180,6 +236,7 @@ button:hover, input[type= button], select{
     text-align: center;
     border: black;
     border-left-style: solid;
+    
 }
 .submenu h3 ul li a:hover{
     text-decoration: none;
