@@ -1,3 +1,28 @@
+/* ESTILO DA LOGIN */
+.espaçoL{
+    border: 3px solid black;
+    visibility: hidden;
+}
+.formlog input{
+    display: block;
+}
+.formlog{
+    border: 3px solid black;
+    text-align: center;
+    font-size: 25px;
+    height: 300px;
+    border-radius: 30px;
+}
+.formlog input,.formlog label{
+    width: 100%;
+}
+.formlog input{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.formlog button{
+    margin-top: 20px;
+}
 /* ESTILO DA TABELA */
 .icD{
     max-width: 20px;
@@ -81,7 +106,7 @@ textarea.formTable{
     border-style: solid;
     border-radius: 10px;
 }
-#telacad2 input[type= button],#telacad2 button, .btn{
+#telacad2 input[type= button],#telacad2 button, .btn,#btnlog{
     width: 170px;
     height: 50px;
     border-radius: 13px;
@@ -104,7 +129,7 @@ button:hover, input[type= button], select{
 }
 #telacad2{
     position: absolute;
-    left:35%;
+    left:35%;     /* Posicionar */
     visibility: hidden;
     display: block;
     border: black;
@@ -116,7 +141,7 @@ button:hover, input[type= button], select{
 #telacad1{
     position: absolute;
     visibility: visible;
-    left:35%;
+    left: 35%;      /* Posicionar */
     display: block;
     border: black;
     border-style: solid;
@@ -295,8 +320,7 @@ button:hover, input[type= button], select{
     overflow: auto;
     padding: 5px 0;
     position: fixed;
-    left: 24.84%;
-    right: 24.84%;
+    left: 18.45%;    /* Posicionar */
     z-index: 9999;
 }
 .header a:hover{
